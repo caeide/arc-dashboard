@@ -123,6 +123,7 @@ fig_overlay = f'data:image/png;base64,{fig_data2}'
 
 # make the app
 app = Dash(__name__)
+server = app.server
 
 app.layout = dbc.Container([
     dbc.Row(html.Div(table), className='g-0'),
